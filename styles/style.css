@@ -28,6 +28,8 @@ main {
     justify-content: center;
     align-items: center;
     margin-bottom: calc(var(--footer-height));
+    background-image: url('https://img.olympicchannel.com/images/image/private/t_16-9_1240-700/f_auto/v1538355600/primary/bn14hjq39c3kq46yybox');
+    background-image:
 }
 
 section {
@@ -47,10 +49,15 @@ section {
 
 header {
     display: flex;
-    justify-content: flex-end;
+    /* justify-content: flex-end; */
     background-color: var(--color3);
     height: var(--header-height);
     box-shadow: var(--shadow);
+    margin-right: 20px;
+    font-size: 50px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
 }
 
 footer {
@@ -66,9 +73,13 @@ h2 {
     font-weight: bold;
 }
 
-.gutter-right {
+/* .gutter-right {
     margin-right: 20px;
-}
+    font-size: 50px;
+    display: flex;
+    /* justify-content:center; */
+    align-items: center;
+} */
 
 .main-logo {
     animation: pulse 5s infinite ease-in-out;
@@ -111,3 +122,24 @@ footer {
     }
 
   }
+
+h1{
+    color: aliceblue;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+p {
+    color: aliceblue;
+    font-size:large;
+    font-weight: bolder;
+}
+li{
+    color: aliceblue;
+    font-size:medium;
+    font-weight: bolder;
+}
+  /* image */
+#CR7Photo {
+    width: 250px;
+    height: 180px;
+}

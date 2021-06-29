@@ -33,7 +33,7 @@ quizzBtn.addEventListener('click', () => {
         } if (shower(ans4)){
             count++;
         }
-        results.textContent = `${name} got ${count} gucci`;
+        results.textContent = `${name} got ${count} gucci Answers`;
     } else {
         console.log('user said nah bruh');
     }
