@@ -29,7 +29,7 @@ main {
     align-items: center;
     margin-bottom: calc(var(--footer-height));
     background-image: url('https://img.olympicchannel.com/images/image/private/t_16-9_1240-700/f_auto/v1538355600/primary/bn14hjq39c3kq46yybox');
-    background-image:
+    /* background-image: */
 }
 
 section {
@@ -78,8 +78,8 @@ h2 {
     font-size: 50px;
     display: flex;
     /* justify-content:center; */
-    align-items: center;
-} */
+    /* align-items:center;
+} */ 
 
 .main-logo {
     animation: pulse 5s infinite ease-in-out;
