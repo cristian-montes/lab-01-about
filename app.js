@@ -2,13 +2,6 @@
 import { eaFreckles } from './utils.js';
 import { isYes } from './utils.js';
 import { shower } from './utils.js';
-  //get the button element
-  // add "click" event listener to the button
-   //   confirm the user wants to start the quiz
-  //    if they do -- propmpt for at least 3 questions and store the answer
-  //  for each answer check if the user entered a correct value
-  // track the number of correct answers
-  //  at the end of the quiz, update the quiz the results section with the number of correct answers.
 
 const quizzBtn = document.getElementById('click-me');
 const results = document.getElementById('results');
@@ -35,16 +28,23 @@ quizzBtn.addEventListener('click', () => {
         } if (shower(ans4)){
             count++;
         }
-      
+      // IF STATEMENTS TO ADD STYLING FOR EVERY USER SCORE
     } if (count === 1) {
+        results.classList.remove('style-ans3');
+        results.classList.remove('style-ans2');
+        results.classList.add('style-ans1');
         results.textContent = `COME ON ${name} YOU ONLY GOT ${count} gucci Answers`;
     } if (count === 2) {
+        results.classList.remove('style-ans1');
+        results.classList.remove('style-ans3');
+        results.classList.add('style-ans2');
         results.textContent = `${name}!!! keep trying, only ${count} really???`;
     } if (count === 3) {
+        results.classList.remove('style-ans2');
+        results.classList.remove('style-ans1');
+        results.classList.add('style-ans3');
         results.textContent = `${name} got ${count} good ones, good job!!!`;
     } if (count === 4) {
         results.textContent = `${name} got ${count} gucci Answers, ALL OF THEM`;
-    } else {
-        alert('SEE YOU LATER ALLIGATOR');
-    }
+    } 
 });
