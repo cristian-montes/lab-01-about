@@ -15,14 +15,16 @@ const results = document.getElementById('results');
   
 quizzBtn.addEventListener('click', () => {
     const confirmed = confirm('Take Quiz?');
+    let name;
+    let count = 0;
     if (confirmed){
-        const name = prompt('whats your name?');
+        name = prompt('whats your name?');
         const ans1 = prompt('Do I like tacos?');
         const ans2 = prompt('Do I like to play soccer?');
         const ans3 = prompt('How many freckles do I have?');
         const ans4 = prompt('Do I shower at night or in the mornig?');
 
-        let count = 0;
+        
 
         if (isYes(ans1)){
             count ++;
@@ -33,8 +35,16 @@ quizzBtn.addEventListener('click', () => {
         } if (shower(ans4)){
             count++;
         }
-        results.textContent = `${name} got ${count} gucci Answers`;
+      
+    } if (count === 1) {
+        results.textContent = `COME ON ${name} YOU ONLY GOT ${count} gucci Answers`;
+    } if (count === 2) {
+        results.textContent = `${name}!!! keep trying, only ${count} really???`;
+    } if (count === 3) {
+        results.textContent = `${name} got ${count} good ones, good job!!!`;
+    } if (count === 4) {
+        results.textContent = `${name} got ${count} gucci Answers, ALL OF THEM`;
     } else {
-        console.log('user said nah bruh');
+        alert('SEE YOU LATER ALLIGATOR');
     }
 });
